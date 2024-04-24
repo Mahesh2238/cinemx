@@ -14,10 +14,10 @@ const HeroBanner = () => {
 
   const {data,loading} = useFetch("/movie/upcoming");
 
-  useEffect(()=>{
-    const bg = url.backdrop + data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path
-    setBackground(bg)
-  },[data])
+  // useEffect(()=>{
+  //   const bg = url.backdrop + data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path
+  //   setBackground(bg)
+  // },[data])
 
   const searchQueryHandler = (event)=>{
     //if user type search query and press enter, and search query not empty, then api call
@@ -44,7 +44,7 @@ const HeroBanner = () => {
         <div className="wrapper">
           <div className="heroBannerContent">
             <span className="title">Welcome</span>
-            <span className="subTitle">The ultimate destination for movie lovers. Explore Now..</span>
+            <span className="subTitle">Explore. Watch. Enjoy</span>
             <div className="searchInput">
               <input type="text" placeholder='Search for movie or TV show..' onChange={(e)=> setQuery(e.target.value)} onKeyUp={searchQueryHandler}/>
               <button >Search</button>

@@ -4,11 +4,13 @@ import {
     FaInstagram,
     FaTwitter,
     FaLinkedin,
+    FaGithub,
 } from "react-icons/fa";
 
 import ContentWrapper from "../contentWrapper/ContentWrapper";
 
 import "./style.scss";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -30,18 +32,22 @@ const Footer = () => {
                     esse cillum dolore eu fugiat nulla pariatur.
                 </div>
                 <div className="socialIcons">
-                    <span className="icon">
-                        <FaFacebookF />
+                    <a href="https://github.com/drleavio"><span className="icon">
+                        <FaGithub />
                     </span>
-                    <span className="icon">
+                    </a>
+                    <a href="https://www.instagram.com/i.maheshswami/?hl=en"><span className="icon">
                         <FaInstagram />
                     </span>
-                    <span className="icon">
+                    </a>
+                    <a href="https://twitter.com/Genshin1563"><span className="icon">
                         <FaTwitter />
                     </span>
-                    <span className="icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/thegovindkushwaha"><span className="icon">
                         <FaLinkedin />
                     </span>
+                    </a>
                 </div>
             </ContentWrapper>
         </footer>

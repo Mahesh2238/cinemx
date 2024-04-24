@@ -3,7 +3,7 @@
 .heroBanner{
     width: 100%;
     height: 450px;
-    background-color: var(--black);
+    background-color: #141619;
     display: flex;
     align-items: center;
     position: relative;
@@ -32,7 +32,7 @@
     .opacity-layer{
         width: 100%;
         height: 250px;
-        background: linear-gradient(180deg, rgba(4,21,45,0) 0%, #04152d 79.17%);
+        background: linear-gradient(180deg, #141619 10%, #2C2E3A 80%);
         position: absolute;
         bottom: 0;
         left: 0;
@@ -70,7 +70,7 @@
             input{
                 width: calc(100% - 100px);
                 height: 50px;
-                background-color: white;
+                background-color: whitesmoke;
                 outline: 0;
                 border: 0;
                 border-radius: 30px 0 0 30px;
